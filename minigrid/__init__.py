@@ -151,6 +151,13 @@ def register_minigrid_envs():
         entry_point="minigrid.envs:DynamicObstaclesEnv",
         kwargs={"size": 16, "n_obstacles": 8},
     )
+    
+    # Velocity dynamic obstacles
+    register(
+        id="MiniGrid-Velocity-Dynamic-Obstacles-16x16-v0",
+        entry_point="minigrid.envs:VelocityDynamicObstaclesEnv",
+        kwargs={"size": 16, "n_obstacles": 14},
+    )
 
     # Empty
     # ----------------------------------------
